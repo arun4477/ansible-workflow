@@ -13,6 +13,6 @@
       state: latest
   - name: Configure Apache for HTTPS
     template:
-	    src: templates/ssl.conf.j2
-	    dest: /etc/httpd/conf.d/ssl.conf
+      src: templates/ssl.conf.j2
+      dest: /etc/httpd/conf.d/ssl.conf
     notify: restart_apache
