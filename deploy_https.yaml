@@ -7,8 +7,8 @@
     - name: Install software
       dnf: 
         name:
-   	  - httpd
-	  - mod_ssl
+	  - httpd
+          - mod_ssl
 	  - firewalld
 	state: latest
 
