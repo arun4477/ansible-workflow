@@ -5,9 +5,9 @@
   gather_facts: true
   tasks:
   - name: Install software
-      ansible.builtin.dnf: 
-        name:
-          - httpd
-          - mod_ssl
-          - firewalld
-        state: latest
+    ansible.builtin.dnf: 
+      name:
+        - httpd
+        - mod_ssl
+        - firewalld
+      state: latest
