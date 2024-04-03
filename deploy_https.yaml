@@ -5,7 +5,7 @@
   gather_facts: true
   tasks:
     - name: Install software
-      dnf: 
+      ansible.builtin.dnf: 
         name:
 	  - httpd
           - mod_ssl
