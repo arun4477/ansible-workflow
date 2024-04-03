@@ -33,8 +33,8 @@
     loop:
       - http
       - https
-handlers:
-- name: restart_apache
-  service:
-    name: httpd
-    state: restarted
+  handlers:
+  - name: restart_apache
+    service:
+      name: httpd
+      state: restarted
