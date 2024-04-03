@@ -2,7 +2,7 @@
 - name: Deploy HTTPS websites
   hosts: all
   become: true
-  gather_facts: true
+  gather_facts: yes
   tasks:
   - name: Install software
     ansible.builtin.dnf: 
