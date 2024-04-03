@@ -7,9 +7,9 @@
     - name: Install software
       ansible.builtin.dnf: 
         name:
-	  - httpd
+          - httpd
           - mod_ssl
-	  - firewalld
+          - firewalld
         state: latest
     - name: Configure Apache for HTTPS
       template:
