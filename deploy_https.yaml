@@ -7,9 +7,9 @@
     - name: Install software
       dnf: 
       name:
-	  - httpd
-          - mod_ssl
-	  - firewalld
+	- httpd
+        - mod_ssl
+	- firewalld
       state: latest
     - name: Configure Apache for HTTPS
       template:
