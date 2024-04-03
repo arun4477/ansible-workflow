@@ -24,3 +24,12 @@
     loop:
       - httpd
       - firewalld
+  - name: Allow services through the firewall
+    ansible.posix.firewalld:
+      service: "{{ item }}"
+      state: enabled
+      immediate: true
+      permanent: true
+    loop:
+      - http
+      - https
