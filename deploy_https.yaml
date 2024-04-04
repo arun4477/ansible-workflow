@@ -22,7 +22,7 @@
       state: started
       enabled: true
     loop:
-      - httpdddd
+      - httpd
       - firewalld
   - name: Allow services through the firewall
     ansible.posix.firewalld:
