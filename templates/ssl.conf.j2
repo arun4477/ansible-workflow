@@ -214,7 +214,7 @@ CustomLog logs/ssl_request_log \
 
 </VirtualHost>
 
-<VirtualHost default :80>
+<VirtualHost _default_:80>
   RewriteEngine on
   RewriteRule ^(/.*)$ https://%{HTTP_HOST}$1 [redirect=301]
 </VirtualHost>
