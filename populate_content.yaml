@@ -5,7 +5,7 @@
   become: true
   gather_facts: false
   vars:
-    repo_source: https://got.lab.example.com/git/slides.git
+    repo_source: https://github.com/arun4477/web-app.git
     repo_branch: main
     repo_dest: /var/www/html
   tasks:
