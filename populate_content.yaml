@@ -12,7 +12,7 @@
   - name: Install software
     dnf:
       name:
-	- git
+        - git
       state: latest
   - name: Clone content to "{{ repo_dest }}"
     git:
