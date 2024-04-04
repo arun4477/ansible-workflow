@@ -14,7 +14,7 @@
     file:
       path: /etc/httpd/conf.d/ssl.conf
       state: absent
-      notify: restart_apache
+    notify: restart_apache
   - name: Remove software
     dnf:
       name:
