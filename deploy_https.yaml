@@ -7,7 +7,7 @@
   - name: Install software
     ansible.builtin.dnf: 
       name:
-        - httpdd
+        - httpd
         - mod_ssl
         - firewalld
       state: latest
