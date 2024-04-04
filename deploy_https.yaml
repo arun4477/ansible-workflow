@@ -34,7 +34,7 @@
       - http
       - https
   handlers:
-  - name: restart_apache
+  - name: restart_apacheee
     service:
       name: httpd
       state: restarted
